@@ -1,0 +1,26 @@
+[DEBUG] 2025-05-04 22:22:21.726 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-05-04 22:22:21.742 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2025-05-04 22:22:21.742 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[DEBUG] 2025-05-04 22:22:21.758 -- thread"main" PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2025-05-04 22:22:22.199 -- thread"main" BaseTest - Initializing driver...
+[INFO ] 2025-05-04 22:22:24.177 -- thread"main" BaseTest - Initializing application...
+[INFO ] 2025-05-04 22:22:39.881 -- thread"main" CheckoutTest - Submit order test
+[INFO ] 2025-05-04 22:22:39.912 -- thread"main" HomePage - Action: searchProduct
+[INFO ] 2025-05-04 22:22:47.161 -- thread"main" SearchResultsPage - Action: selectProduct
+[INFO ] 2025-05-04 22:22:49.240 -- thread"main" ProductDetailsPage - Action: selectProductAttributes
+[INFO ] 2025-05-04 22:22:49.240 -- thread"main" ProductDetailsPage - Action: selectProductSize
+[INFO ] 2025-05-04 22:22:49.336 -- thread"main" ProductDetailsPage - Action: selectProductColour
+[INFO ] 2025-05-04 22:22:49.476 -- thread"main" ProductDetailsPage - Action: clickAddToCart
+[INFO ] 2025-05-04 22:22:54.599 -- thread"main" ProductDetailsPage - Action: openCartPage
+[INFO ] 2025-05-04 22:22:54.599 -- thread"main" ProductDetailsPage - Action: clickCartIcon
+[INFO ] 2025-05-04 22:22:59.884 -- thread"main" ProductDetailsPage - Action: clickViewEditCart
+[INFO ] 2025-05-04 22:23:02.566 -- thread"main" CartPage - Action: goToCheckout
+[INFO ] 2025-05-04 22:23:06.304 -- thread"main" CheckoutPage - Action: enterSignupEmail
+[INFO ] 2025-05-04 22:23:06.820 -- thread"main" CheckoutTest - Fetching shipping address from json
+[INFO ] 2025-05-04 22:23:06.820 -- thread"main" CheckoutTest - Shipping address fetched
+[INFO ] 2025-05-04 22:23:06.820 -- thread"main" CheckoutPage - Action: enterShippingAddress
+[INFO ] 2025-05-04 22:23:09.968 -- thread"main" CheckoutPage - Action: selectShippingMethod
+[INFO ] 2025-05-04 22:23:10.733 -- thread"main" CheckoutPage - Action: clickNext
+[INFO ] 2025-05-04 22:23:12.976 -- thread"main" CheckoutPage - Action: clickPlaceOrder
+[INFO ] 2025-05-04 22:23:18.568 -- thread"main" CheckoutTest - Order placed successfully
+[INFO ] 2025-05-04 22:23:18.568 -- thread"main" BaseTest - Closing browser...

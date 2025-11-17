@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-04T21:57:49 IST" name="MagnetoAutomation Smoke TestSuite" finished-at="2025-05-04T21:59:33 IST" duration-ms="104285">
+    <groups>
+      <group name="regression">
+        <method signature="CheckoutTest.submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutTest@79179359]" name="submitOrderTest" class="tests.CheckoutTest"/>
+        <method signature="LoginTest.successfulLoginTest(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@460ebd80]" name="successfulLoginTest" class="tests.LoginTest"/>
+        <method signature="MyAccountsTest.userRegistrationTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MyAccountsTest@7776ab]" name="userRegistrationTest" class="tests.MyAccountsTest"/>
+        <method signature="LoginTest.unsuccessfulLoginTest(java.lang.String,java.lang.String)[pri:2, instance:tests.LoginTest@460ebd80]" name="unsuccessfulLoginTest" class="tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CheckoutTest.submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutTest@79179359]" name="submitOrderTest" class="tests.CheckoutTest"/>
+        <method signature="LoginTest.successfulLoginTest(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@460ebd80]" name="successfulLoginTest" class="tests.LoginTest"/>
+        <method signature="MyAccountsTest.userRegistrationTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MyAccountsTest@7776ab]" name="userRegistrationTest" class="tests.MyAccountsTest"/>
+        <method signature="LoginTest.unsuccessfulLoginTest(java.lang.String,java.lang.String)[pri:2, instance:tests.LoginTest@460ebd80]" name="unsuccessfulLoginTest" class="tests.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2025-05-04T21:57:49 IST" name="SmokeTests" finished-at="2025-05-04T21:59:33 IST" duration-ms="104285">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setupLogger()[pri:0, instance:tests.LoginTest@460ebd80]" started-at="2025-05-04T21:57:49 IST" name="setupLogger" finished-at="2025-05-04T21:57:49 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLogger -->
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:tests.LoginTest@460ebd80]" started-at="2025-05-04T21:57:50 IST" name="setUpDriver" finished-at="2025-05-04T21:58:13 IST" duration-ms="23694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@460ebd80]" started-at="2025-05-04T21:58:13 IST" name="successfulLoginTest" data-provider="getLoginCredentialsData" finished-at="2025-05-04T21:58:19 IST" duration-ms="5444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arpitbansal1221@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nagp#1221]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@460ebd80]" started-at="2025-05-04T21:58:19 IST" name="tearDown" finished-at="2025-05-04T21:58:20 IST" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:tests.LoginTest@460ebd80]" started-at="2025-05-04T21:58:20 IST" name="setUpDriver" finished-at="2025-05-04T21:58:31 IST" duration-ms="10820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="unsuccessfulLoginTest(java.lang.String,java.lang.String)[pri:2, instance:tests.LoginTest@460ebd80]" started-at="2025-05-04T21:58:31 IST" name="unsuccessfulLoginTest" data-provider="getLoginNegativeData" finished-at="2025-05-04T21:58:36 IST" duration-ms="5620" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testinvalid@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test!!!2233]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login error message is not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login error message is not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.LoginTest.unsuccessfulLoginTest(LoginTest.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unsuccessfulLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@460ebd80]" started-at="2025-05-04T21:58:36 IST" name="tearDown" finished-at="2025-05-04T21:58:37 IST" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.MyAccountsTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:tests.MyAccountsTest@7776ab]" started-at="2025-05-04T21:58:37 IST" name="setUpDriver" finished-at="2025-05-04T21:58:45 IST" duration-ms="7936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MyAccountsTest@7776ab]" started-at="2025-05-04T21:58:45 IST" name="userRegistrationTest" data-provider="getSignupData" finished-at="2025-05-04T21:58:52 IST" duration-ms="7103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arpita]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bansal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.MyAccountsTest@7776ab]" started-at="2025-05-04T21:58:52 IST" name="tearDown" finished-at="2025-05-04T21:58:53 IST" duration-ms="826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:tests.MyAccountsTest@7776ab]" started-at="2025-05-04T21:58:53 IST" name="setUpDriver" finished-at="2025-05-04T21:58:56 IST" duration-ms="3018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="userRegistrationTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MyAccountsTest@7776ab]" started-at="2025-05-04T21:58:56 IST" name="userRegistrationTest" data-provider="getSignupData" finished-at="2025-05-04T21:59:05 IST" duration-ms="9175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jackson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bird]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jack@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.MyAccountsTest@7776ab]" started-at="2025-05-04T21:59:05 IST" name="tearDown" finished-at="2025-05-04T21:59:06 IST" duration-ms="811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.MyAccountsTest -->
+      <class name="tests.CheckoutTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:tests.CheckoutTest@79179359]" started-at="2025-05-04T21:59:06 IST" name="setUpDriver" finished-at="2025-05-04T21:59:17 IST" duration-ms="11255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="submitOrderTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutTest@79179359]" started-at="2025-05-04T21:59:17 IST" name="submitOrderTest" data-provider="getProductData" finished-at="2025-05-04T21:59:32 IST" duration-ms="14738" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Radiant Tee]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[XS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Orange]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (be29bc8db4069e6c16fc1968647ce0cc)] -> css selector: button[title='Search']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\ARPITB~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9517/devtool..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be29bc8db4069e6c16fc1968647ce0cc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (be29bc8db4069e6c16fc1968647ce0cc)] -> css selector: button[title='Search']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.49, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\ARPITB~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9517}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9517/devtool..., se:cdpVersion: 136.0.7103.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be29bc8db4069e6c16fc1968647ce0cc
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.SeleniumUtils.waitForElementToBeClickable(SeleniumUtils.java:33)
+at pageobjects.HomePage.searchProduct(HomePage.java:65)
+at tests.CheckoutTest.submitOrderTest(CheckoutTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@79179359]" started-at="2025-05-04T21:59:32 IST" name="tearDown" finished-at="2025-05-04T21:59:33 IST" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CheckoutTest -->
+    </test> <!-- SmokeTests -->
+  </suite> <!-- MagnetoAutomation Smoke TestSuite -->
+</testng-results>

@@ -1,0 +1,64 @@
+[DEBUG] 2025-05-04 22:54:52.822 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-05-04 22:54:52.830 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2025-05-04 22:54:52.831 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[DEBUG] 2025-05-04 22:54:52.869 -- thread"main" PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2025-05-04 22:54:53.661 -- thread"main" BaseTest - Initializing driver...
+[INFO ] 2025-05-04 22:55:00.343 -- thread"main" BaseTest - Initializing application...
+[INFO ] 2025-05-04 22:55:17.367 -- thread"main" LoginTest - Login test
+[INFO ] 2025-05-04 22:55:19.812 -- thread"main" LoginPage - Logging in with arpitbansal1221@gmail.com and Nagp#1221
+[INFO ] 2025-05-04 22:55:19.813 -- thread"main" LoginPage - Action: enterUsername
+[INFO ] 2025-05-04 22:55:19.974 -- thread"main" LoginPage - Action: enterPassword
+[INFO ] 2025-05-04 22:55:20.144 -- thread"main" LoginPage - Action: clickLoginButton
+[INFO ] 2025-05-04 22:55:23.346 -- thread"main" LoginTest - Login successful
+[INFO ] 2025-05-04 22:55:23.356 -- thread"main" BaseTest - Closing browser...
+[INFO ] 2025-05-04 22:55:24.279 -- thread"main" BaseTest - Initializing driver...
+[INFO ] 2025-05-04 22:55:27.076 -- thread"main" BaseTest - Initializing application...
+[WARN ] 2025-05-04 22:55:42.471 -- thread"main" LoginTest - NegativeTest: Unsuccessful login scenario
+[INFO ] 2025-05-04 22:55:44.333 -- thread"main" LoginPage - Logging in with testinvalid@gmail.com and test!!!2233
+[INFO ] 2025-05-04 22:55:44.334 -- thread"main" LoginPage - Action: enterUsername
+[INFO ] 2025-05-04 22:55:44.650 -- thread"main" LoginPage - Action: enterPassword
+[INFO ] 2025-05-04 22:55:44.814 -- thread"main" LoginPage - Action: clickLoginButton
+[ERROR] 2025-05-04 22:55:46.517 -- thread"main" LoginTest - NegativeTest: Test has been explicitly failed to check screenshotonfailure feature
+[INFO ] 2025-05-04 22:55:46.835 -- thread"main" BaseTest - Closing browser...
+[DEBUG] 2025-05-04 22:55:47.911 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-05-04 22:55:47.913 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2025-05-04 22:55:47.915 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[DEBUG] 2025-05-04 22:55:47.917 -- thread"main" PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2025-05-04 22:55:47.973 -- thread"main" BaseTest - Initializing driver...
+[INFO ] 2025-05-04 22:55:50.694 -- thread"main" BaseTest - Initializing application...
+[INFO ] 2025-05-04 22:56:01.626 -- thread"main" MyAccountsTest - User signup test
+[INFO ] 2025-05-04 22:56:03.763 -- thread"main" CreateAccountPage - Action: accountRegistration
+[INFO ] 2025-05-04 22:56:07.984 -- thread"main" MyAccountsTest - User signup completed
+[INFO ] 2025-05-04 22:56:07.986 -- thread"main" BaseTest - Closing browser...
+[INFO ] 2025-05-04 22:56:08.677 -- thread"main" BaseTest - Initializing driver...
+[INFO ] 2025-05-04 22:56:10.857 -- thread"main" BaseTest - Initializing application...
+[INFO ] 2025-05-04 22:56:16.540 -- thread"main" MyAccountsTest - User signup test
+[INFO ] 2025-05-04 22:56:18.504 -- thread"main" CreateAccountPage - Action: accountRegistration
+[INFO ] 2025-05-04 22:56:22.729 -- thread"main" MyAccountsTest - User signup completed
+[INFO ] 2025-05-04 22:56:22.731 -- thread"main" BaseTest - Closing browser...
+[DEBUG] 2025-05-04 22:56:23.434 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-05-04 22:56:23.436 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2025-05-04 22:56:23.437 -- thread"main" PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[DEBUG] 2025-05-04 22:56:23.438 -- thread"main" PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2025-05-04 22:56:23.493 -- thread"main" BaseTest - Initializing driver...
+[INFO ] 2025-05-04 22:56:25.641 -- thread"main" BaseTest - Initializing application...
+[INFO ] 2025-05-04 22:56:31.647 -- thread"main" CheckoutTest - Submit order test
+[INFO ] 2025-05-04 22:56:31.648 -- thread"main" HomePage - Action: searchProduct
+[INFO ] 2025-05-04 22:56:38.938 -- thread"main" SearchResultsPage - Action: selectProduct
+[INFO ] 2025-05-04 22:56:41.168 -- thread"main" ProductDetailsPage - Action: selectProductAttributes
+[INFO ] 2025-05-04 22:56:41.168 -- thread"main" ProductDetailsPage - Action: selectProductSize
+[INFO ] 2025-05-04 22:56:41.274 -- thread"main" ProductDetailsPage - Action: selectProductColour
+[INFO ] 2025-05-04 22:56:41.457 -- thread"main" ProductDetailsPage - Action: clickAddToCart
+[INFO ] 2025-05-04 22:56:46.589 -- thread"main" ProductDetailsPage - Action: openCartPage
+[INFO ] 2025-05-04 22:56:46.589 -- thread"main" ProductDetailsPage - Action: clickCartIcon
+[INFO ] 2025-05-04 22:56:51.776 -- thread"main" ProductDetailsPage - Action: clickViewEditCart
+[INFO ] 2025-05-04 22:56:54.634 -- thread"main" CartPage - Action: goToCheckout
+[INFO ] 2025-05-04 22:56:58.501 -- thread"main" CheckoutPage - Action: enterSignupEmail
+[INFO ] 2025-05-04 22:56:59.162 -- thread"main" CheckoutTest - Fetching shipping address from json
+[INFO ] 2025-05-04 22:56:59.162 -- thread"main" CheckoutTest - Shipping address fetched
+[INFO ] 2025-05-04 22:56:59.162 -- thread"main" CheckoutPage - Action: enterShippingAddress
+[INFO ] 2025-05-04 22:57:02.389 -- thread"main" CheckoutPage - Action: selectShippingMethod
+[INFO ] 2025-05-04 22:57:03.101 -- thread"main" CheckoutPage - Action: clickNext
+[INFO ] 2025-05-04 22:57:05.068 -- thread"main" CheckoutPage - Action: clickPlaceOrder
+[INFO ] 2025-05-04 22:57:10.963 -- thread"main" CheckoutTest - Order placed successfully
+[INFO ] 2025-05-04 22:57:10.965 -- thread"main" BaseTest - Closing browser...

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MagnetoAutomation All TestSuite">
+    <listeners>
+        <listener class-name="BaseComponents.Listeners"/>
+    </listeners>
+
+    <test name="MagnetoAllTest" parallel = "methods" thread-count = "3">
+        <classes>
+            <class name="tests.LoginTest"></class>
+            <class name="tests.MyAccountsTest"></class>
+            <class name="tests.ProductDetailsTest"></class>
+            <class name="tests.CartTest"></class>
+            <class name="tests.CheckoutTest"></class>
+        </classes>
+    </test>
+</suite>

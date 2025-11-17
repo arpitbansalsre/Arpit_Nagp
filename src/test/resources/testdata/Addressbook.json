@@ -1,0 +1,13 @@
+[
+  {
+    "firstname": "Arpit",
+    "lastname": "Bansal",
+    "company": "TestData",
+    "streetaddress": "Add1",
+    "country": "India",
+    "state": "Uttar Pradesh",
+    "city": "Saharanpur",
+    "postalcode": "247342",
+    "phone": "7042949494"
+  }
+]

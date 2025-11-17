@@ -1,0 +1,10 @@
+housekeeping\CleanExtentReports.class
+tests\CartTest.class
+tests\ProductDetailsTest.class
+tests\CheckoutTest.class
+tests\LoginTest.class
+BaseComponents\DriverFactory.class
+tests\MyAccountsTest.class
+BaseComponents\BaseTest.class
+housekeeping\CleanLogs.class
+BaseComponents\Listeners.class

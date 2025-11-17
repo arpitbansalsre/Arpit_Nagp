@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MagnetoAutomation All TestSuite" verbose="4">
+    <listeners>
+        <listener class-name="BaseComponents.Listeners"/>
+    </listeners>
+
+    <test verbose="2" name="MagnetoAllTest">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.MyAccountsTest"/>
+            <class name="tests.ProductDetailsTest"/>
+            <class name="tests.CartTest"/>
+            <class name="tests.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>
