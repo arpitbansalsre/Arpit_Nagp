@@ -13,6 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                cleanWs() 
                 // Explicitly specify the branch
                 git branch: 'main', url: 'https://github.com/arpitbansalsre/Arpit_Nagp'
             }
