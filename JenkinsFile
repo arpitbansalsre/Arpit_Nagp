@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+
+triggers {
+cron('0 06 * * *')
+}
+
+    tools {
+        jdk "JDK21"      // must match your JDK name in Global Tool Configuration
+        maven "Maven"    // must match your Maven name in Global Tool Configuration
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                script {
+                git url: 'https://github.com/arpitbansalsre/Arpit_Nagp'
+                }
+            }
+        }
+
+        stage('Build') {
+            steps {
+                script {
+                bat "mvn clean compile -DskipTests=true"
+            }
+        }
+      }
+
+        stage('Test') {
+            steps {
+               script {
+                bat 'mvn test'
+            }
+        }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploy stage (optional)...'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Build successful!'
+        }
+        failure {
+            echo 'Build failed!'
+        }
+    }
+}
