@@ -1,38 +1,35 @@
 pipeline {
     agent any
 
-triggers {
-cron('0 06 * * *')
-}
+    triggers {
+        cron('0 06 * * *')  // Run daily at 6 AM
+    }
 
     tools {
-        jdk "JDK21"      // must match your JDK name in Global Tool Configuration
-        maven "Maven"    // must match your Maven name in Global Tool Configuration
+        jdk "JDK21"      // Must match your JDK in Global Tool Configuration
+        maven "Maven"    // Must match your Maven in Global Tool Configuration
     }
 
     stages {
         stage('Checkout') {
             steps {
-                script {
-                git url: 'https://github.com/arpitbansalsre/Arpit_Nagp'
-                }
+                // Explicitly specify the branch
+                git branch: 'main', url: 'https://github.com/arpitbansalsre/Arpit_Nagp'
             }
         }
 
         stage('Build') {
             steps {
-                script {
-                bat "mvn clean compile -DskipTests=true"
+                // Compile without running tests
+                bat 'mvn clean compile -DskipTests=true'
             }
         }
-      }
 
         stage('Test') {
             steps {
-               script {
+                // Run tests
                 bat 'mvn test'
             }
-        }
         }
 
         stage('Deploy') {
