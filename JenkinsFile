@@ -47,6 +47,25 @@ pipeline {
                 echo 'Deploy stage (optional)...'
             }
         }
+
+	    stage("Publish to Artifactory"){
+            steps{
+                rtMavenDeployer(
+                    id: 'deployer',
+                    serverId: '7042949460@artifactory',
+                    releaseRepo: 'nagp.session.jfrog',
+                    snapshotRepo: 'nagp.session.jfrog'
+                )
+                rtMavenRun(
+                    pom: 'pom.xml',
+                    goals: 'clean install',
+                    deployerId: 'deployer'
+                    )
+                rtPublishBuildInfo(
+                    serverId:'7042949460@artifactory',
+                )
+            }        
+        }
     }
 
     post {
